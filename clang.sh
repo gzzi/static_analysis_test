@@ -2,6 +2,13 @@
 
 set -e
 
-scan-build --keep-going -o /tmp/html ./build.sh --
+# scan-build --keep-going -o build/html ./build.sh --
 
-# clang-tidy bad_code.cpp
+clang-tidy \
+    -p build \
+    -checks=* \
+    -warnings-as-errors=* \
+    -quiet \
+    bad_code.cpp \
+    main.cpp \
+    --

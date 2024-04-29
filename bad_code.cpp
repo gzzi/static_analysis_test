@@ -1,6 +1,8 @@
 
 #include "bad_code.hpp"
 
+namespace bad_code {
+
 int bad_div(int num, int den) {
     return num / den;
 }
@@ -26,4 +28,6 @@ void in_file_bad_div() {
 
 void in_file_bad_buffer() {
     bad_buffer_access(12);
+}
+
 }
