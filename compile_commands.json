@@ -10,5 +10,11 @@
         "command": "g++ -Os -Wall -Wdisabled-optimization -Werror -Wextra -std=gnu++20 -o build/main.o -c main.cpp",
         "file": "main.cpp",
         "output": "build/main.o"
+    },
+    {
+        "directory": ".",
+        "command": "g++ -Os -Wall -Wdisabled-optimization -Werror -Wextra -std=gnu++20 -o build/main build/bad_code.o build/main.o",
+        "file": "build/main.o",
+        "output": "build/main"
     }
 ]
