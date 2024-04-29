@@ -6,7 +6,7 @@ set -e
 
 clang-tidy \
     -p build \
-    -checks=* \
+    -checks=*,-llvmlibc-callee-namespace,-llvmlibc-implementation-in-namespace \
     -warnings-as-errors=* \
     -quiet \
     bad_code.cpp \

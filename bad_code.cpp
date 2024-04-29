@@ -22,12 +22,12 @@ int forever(int m, int n)
    return arr[0][0];  // slient the unused
 }
 
-void in_file_bad_div() {
-    bad_div(42, 0);
-}
+// void in_file_bad_div() {
+//     bad_div(42, 0);
+// }
 
-void in_file_bad_buffer() {
-    bad_buffer_access(12);
-}
+// void in_file_bad_buffer() {
+//     bad_buffer_access(12);
+// }
 
 }

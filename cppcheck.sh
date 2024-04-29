@@ -4,7 +4,7 @@ set -e
 
 cppcheck \
     --project=./compile_commands.json \
-    --cppcheck-build-dir=build/cpp_check \
+    --cppcheck-build-dir=build \
     --error-exitcode=1 \
     -i. \
     -q \

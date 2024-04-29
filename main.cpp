@@ -1,6 +1,7 @@
 
-#include <iostream>
 #include "bad_code.hpp"
+
+#include <iostream>
 
 int main(void) {
 
