@@ -1,0 +1,14 @@
+[
+    {
+        "directory": ".",
+        "command": "g++ -Os -Wall -Wdisabled-optimization -Werror -Wextra -std=gnu++20 -o build/bad_code.o -c bad_code.cpp",
+        "file": "bad_code.cpp",
+        "output": "build/bad_code.o"
+    },
+    {
+        "directory": ".",
+        "command": "g++ -Os -Wall -Wdisabled-optimization -Werror -Wextra -std=gnu++20 -o build/main.o -c main.cpp",
+        "file": "main.cpp",
+        "output": "build/main.o"
+    }
+]
