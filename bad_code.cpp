@@ -1,5 +1,6 @@
 
 #include "bad_code.hpp"
+#include <stdio.h>
 
 namespace bad_code {
 
@@ -20,6 +21,14 @@ int forever(int m, int n)
       arr[i][j] = 0.f;
 
    return arr[0][0];  // slient the unused
+}
+
+void FileOpen() {
+    FILE *f = fopen("file.txt", "r");
+    if (f == NULL) {
+        printf("Error opening file\n");
+        return;
+    }
 }
 
 // void in_file_bad_div() {
